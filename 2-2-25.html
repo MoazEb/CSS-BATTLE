@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shapes</title>
+  <style>
+  html{
+      height:100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background:beige;
+  }
+    body {
+      margin: 0;
+      width:400px;
+      height: 300px;
+      background: #EED9D9;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      border:1px solid gray;
+    }
+
+    .t {
+      width: 280px;
+      height: 60px;
+      background: #469DBA;
+      position: relative;
+    }
+
+    .t:after, .t:before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #469DBA;
+      top: -60px;
+    }
+
+    .t:before {
+      top: 60px;
+      right: 0;
+    }
+
+    .b {
+      width: 120px;
+      height: 120px;
+      background: #46487C;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class='t'></div>
+  <div class='b'></div>
+</body>
+</html>
+

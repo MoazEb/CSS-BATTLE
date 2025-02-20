@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .container {
+            width: 400px;
+            height: 300px;
+            background: #B0E1FB;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            position:relative;
+        }
+        .a{
+            height:180px;
+            width:50px;
+            background:#4B4D88;
+            border-radius:50px;
+            border:10px solid #B0E1FB;
+            position:absolute;
+            margin-bottom:20px;
+            z-index:1;
+            position:relative;
+        }
+        .a:after,.a:before{
+            height:0px;
+            width:0px;
+            border-right:30px solid #4B4D88;
+            border-left:30px solid transparent;
+            border-bottom:30px solid transparent;
+            position:absolute;
+            content:"";
+            transform:rotate(180deg);
+        }
+        .a:after{
+            top:50%;
+            left:calc(100% + 10px);
+        }
+        .a:before{
+            top:42%;
+            right:calc(100% - 5px);
+            transform:rotate(90deg);
+        }
+        .b{
+            height:0px;
+            width:0px;
+            border-right:65px solid transparent;
+            border-left:65px solid transparent;
+            border-bottom:65px solid #C15965;
+            position:absolute;
+            margin-top:155px;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='a'></div>
+        <div class='b'></div>
+    </div>
+</body>
+</html>
+

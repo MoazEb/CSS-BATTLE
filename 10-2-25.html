@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converted Page</title>
+    <style>
+      html{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      body {
+        margin:0;
+        width: 400px;
+        height: 300px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:70px;
+        position:absolute;
+        background:#fff;
+        overflow:hidden;
+      }
+      .a,.c{
+         width:65px;
+        height:150px;
+        background:#328FC1;
+      }
+      .b{
+        width:50px;
+        height:50px;
+        background:#328FC1;
+        border-radius:50%;
+        position:relative;
+      }
+      .a:after,.c:after{
+        content:"";
+        position:absolute;
+        width:250px;
+        height:250px;
+        background:#fff;
+        border-radius:50%;
+        bottom:8%;
+      }
+      .c:after{
+        margin-left:40px;
+      }
+      .a:after{
+        left:-46%;
+      }
+    </style>
+</head>
+<body>
+  <div class='a'></div>
+  <div class='b'></div>
+  <div class='c'></div>
+</body>
+</html>
+
