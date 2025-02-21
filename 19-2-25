@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page</title>
+    <style>
+        html{background:#909090}
+        body {
+            background: #D95362;
+            padding: 40px 120px;
+            width:400px;height:300px;
+            box-sizing:border-box;
+            position:absolute;
+            top:50%;left:50%;
+            transform:translate(-50%,-50%);
+        }
+        div {
+            background: #FDFFE9;
+            width: 80px;
+            height: 220px;
+            display: inline-block;
+        }
+        .a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 0 0 16px;
+            background: #FDFFE9;
+            display: inline-block;
+            position: relative;
+        }
+        .a:before, .a:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #FDFFE9;
+            bottom: 85px;
+        }
+        .a:after {
+            bottom: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p class="a"></p>
+</body>
+</html>
