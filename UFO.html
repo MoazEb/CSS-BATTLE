@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Page</title>
+	<style>
+		body {
+			margin: 0;
+			background: #2F434E;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container {
+			text-align: center;
+		}
+		.a {
+			width: 160px;
+			height: 81px;
+			background: #E25C57;
+			border-top-left-radius: 80px;
+			border-top-right-radius: 80px;
+			margin: 0 auto;
+		}
+		.b {
+			width: 260px;
+			position: relative;
+			left: 0;
+			height: 46px;
+			background: #F3AC3C;
+			clip-path: polygon(0 100%, 50px 0, 210px 0, 100% 100%);
+			margin: 0 auto;
+		}
+		.c {
+			width: 20px;
+			height: 20px;
+			background: #E25C57;
+			border-radius: 50%;
+			position: absolute;
+			left: 50%;
+			top: 56%;
+			transform: translate(-50%, -50%);
+		}
+		.c:after, .c:before {
+			width: 20px;
+			height: 20px;
+			background: #E25C57;
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+		}
+		.c:before {
+			left: -80px;
+		}
+		.c:after {
+			left: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<div class='a'></div>
+		<div class='b'>
+			<div class='c'></div>
+		</div>
+	</div>
+</body>
+</html>
