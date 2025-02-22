@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+	  <title>HTML Page</title>
+	  <style>
+		  body {
+			  background: #3F4869;
+			  height:100vh;display:flex;
+			  justify-content:center;
+			  align-items:center;
+		  }
+		  div {
+			  width: 180px;
+			  height: 180px;
+			  background: #F4DA64;
+			  border-radius: 100%;
+			  position: relative;
+			  left:-40px
+		  }
+		  div:before, div:after {
+			  content: "";
+			  position: absolute;
+			  width: 180px;
+			  height: 180px;
+			  background: #E25C57;
+			  border-radius: 50%;
+			  left: 100px;
+			  z-index: -1
+		  }
+		  div:after {
+			  width: 80px;
+			  height: 85px;
+			  z-index: 1;
+			  border-radius: 0;
+			  border-top-left-radius: 100%;
+			  left: 100px;
+			  top: 5px
+		  }
+	  </style>
+  </head>
+  <body>
+	  <div></div>
+  </body>
+  </html>
